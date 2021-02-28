@@ -1,7 +1,7 @@
 import React from "react";
 
 const Country = (props) => {
-  const { name, population, region, flag } = props.country;
+  const { name, population, region, subregion, flag } = props.country;
   const flagStyle = { height: "50px" };
   const countryStyle = {
     border: "1px solid red",
@@ -16,6 +16,7 @@ const Country = (props) => {
       <img style={flagStyle} src={flag} alt="" />
       <p>Population :{population} </p>
       <p>Region :{region}</p>
+      <p>Sub Region :{subregion}</p>
       <button onClick={() => handleAddCountry(props.country)}>
         Add Country
       </button>
